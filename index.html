@@ -1,75 +1,117 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dinheiro Digital com IA</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dinheiro Digital com IA - Curso Completo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    * { box-sizing: border-box; transition: all 0.3s ease-in-out; }
+    /* Reset e estilo base */
+    * {
+      box-sizing: border-box;
+      transition: all 0.4s ease;
+    }
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
-      background: #000;
-      color: #fff;
+      background: #121212;
+      color: #e0e0e0;
+      opacity: 0;
+      animation: fadeIn 1.2s forwards;
+      line-height: 1.6;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
     }
     header {
-      background-color: #111;
-      padding: 2rem 1rem;
+      background-color: #1f1f1f;
+      padding: 2.5rem 1rem;
       text-align: center;
+      box-shadow: 0 0 12px #00bfa5;
     }
     header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      font-size: 2.8rem;
+      color: #00bfa5;
+      margin-bottom: 0.3rem;
+      letter-spacing: 1.2px;
     }
     header p {
       font-size: 1.2rem;
       max-width: 700px;
       margin: 0 auto;
+      color: #b2dfdb;
     }
     .cta-buttons {
-      margin-top: 1.5rem;
+      margin-top: 1.8rem;
     }
     .cta-buttons a {
-      background-color: #00c853;
-      color: #fff;
-      padding: 0.8rem 1.5rem;
-      margin: 0.5rem;
-      border-radius: 8px;
+      background: linear-gradient(45deg, #00bfa5, #1de9b6);
+      color: #121212;
+      padding: 0.85rem 1.8rem;
+      margin: 0.6rem;
+      border-radius: 12px;
+      font-weight: 700;
       text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,191,165,0.5);
       display: inline-block;
-      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .cta-buttons a:hover {
+      background: linear-gradient(45deg, #1de9b6, #00bfa5);
+      box-shadow: 0 6px 14px rgba(29,233,182,0.7);
+    }
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
     section {
-      padding: 2rem 1rem;
-      max-width: 900px;
-      margin: 0 auto;
-      background: #1a1a1a;
-      margin-top: 1.5rem;
-      border-radius: 10px;
+      background: #222;
+      padding: 2rem 2.5rem;
+      margin-bottom: 2rem;
+      border-radius: 14px;
+      box-shadow: 0 0 15px #00796b50;
     }
     h2 {
-      font-size: 2rem;
-      color: #00e676;
+      color: #00bfa5;
       margin-bottom: 1rem;
+      font-size: 2.2rem;
+      text-align: center;
+      letter-spacing: 1.1px;
+    }
+    h3 {
+      color: #80cbc4;
+      margin-top: 1.3rem;
+      margin-bottom: 0.6rem;
+    }
+    p {
+      font-size: 1.05rem;
+      color: #cfd8dc;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+      color: #b2dfdb;
+      font-weight: 600;
+    }
+    .frases {
+      background: #004d40;
+      border-radius: 12px;
+      padding: 1rem 1.5rem;
+      font-style: italic;
+      color: #a7ffeb;
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      box-shadow: inset 0 0 12px #00796b;
     }
     footer {
-      background: #111;
-      color: #aaa;
       text-align: center;
       padding: 2rem 1rem;
-      margin-top: 2rem;
-    }
-    .chapter {
-      margin-bottom: 2rem;
-    }
-    .chapter h3 {
-      color: #ffab00;
-      margin-top: 1rem;
-    }
-    .chapter p {
-      margin-bottom: 1rem;
+      background: #1f1f1f;
+      color: #555;
+      font-size: 0.9rem;
+      letter-spacing: 0.9px;
+      margin-top: 3rem;
     }
   </style>
 </head>
@@ -77,32 +119,65 @@
 
 <header>
   <h1>Dinheiro Digital com IA</h1>
-  <p>Descubra como lucrar online com inteligência artificial. Curso prático em 10 capítulos para mudar sua vida financeira.</p>
+  <p>Descubra o caminho para viver de internet usando inteligência artificial e foco estratégico.</p>
   <div class="cta-buttons">
-    <a href="https://pay.kiwify.com.br/cstPi7Q" target="_blank">💰 Comprar Curso</a>
-    <a href="https://wa.me/5555996043937?text=Olá,%20quero%20saber%20mais%20sobre%20o%20curso%20Dinheiro%20Digital%20com%20IA" target="_blank">💬 Suporte WhatsApp</a>
+    <a href="https://pay.kiwify.com.br/cstPi7Q" target="_blank" rel="noopener noreferrer">💰 Comprar Curso</a>
+    <a href="https://wa.me/5555996043937?text=Olá,%20quero%20saber%20mais%20sobre%20o%20curso%20Dinheiro%20Digital%20com%20IA" target="_blank" rel="noopener noreferrer">💬 Suporte WhatsApp</a>
   </div>
 </header>
 
-<section>
-  <h2>Capítulo 1 – Mentalidade Milionária Digital</h2>
-  <div class="chapter">
-    <h3>🧠 Frase de Impacto:</h3>
-    <p>“O dinheiro segue quem serve com valor, foco e ação.” — Érico Mendieta</p>
+<main>
+  <section>
+    <h2>O que é Viver de Internet?</h2>
+    <p>
+      Viver de internet é a liberdade de gerar renda online, sem depender de patrões, horários fixos ou deslocamentos. 
+      É construir fontes de receita digitais que trabalham para você 24 horas, permitindo trabalhar de qualquer lugar do mundo.
+    </p>
+    <p>
+      Com as ferramentas atuais e o poder da inteligência artificial, criar produtos, serviços e negócios digitais está mais acessível do que nunca. 
+      Você só precisa do conhecimento certo e de foco para transformar suas ideias em dinheiro.
+    </p>
+  </section>
 
-    <h3>📖 Explicação:</h3>
-    <p>Antes de qualquer plataforma, site ou estratégia, o que mais importa é a sua mente. A internet tem oportunidades infinitas, mas só aproveita quem tem disciplina, consistência e visão de longo prazo.</p>
+  <section>
+    <h2>Frases de Impacto dos Fora de Série (Outliers)</h2>
+    <div class="frases">
+      “O sucesso não é um ato isolado, é a soma de pequenos esforços repetidos todos os dias.”<br />
+      “Não é o talento que te separa do comum. É o tempo que você dedica ao que ama.”<br />
+      “Os fora de série não esperam oportunidades — eles treinam para quando elas aparecerem.”<br />
+      “10 mil horas não são sobre tempo, são sobre compromisso com a excelência.”<br />
+      “Grandes conquistas nascem de práticas silenciosas feitas quando ninguém está olhando.”<br />
+      “A oportunidade sorri para quem está preparado. E você se prepara todos os dias.”<br />
+      “Você se torna fora de série quando para de competir com os outros e começa a competir com sua própria disciplina.”<br />
+      “Não é sorte. É intenção, ação e consistência.”<br />
+      “A maioria para antes de começar a se destacar. Os fora de série continuam.”<br />
+    </div>
+  </section>
 
-    <h3>⭐ Exemplo Prático:</h3>
-    <p>João, desempregado, começou criando conteúdos com IA no Instagram sobre frases motivacionais e links de afiliado. Em 3 meses, faturava mais de R$1.500 por mês com apenas 1 hora por dia.</p>
+  <section>
+    <h2>Por que aprender a ganhar dinheiro com IA?</h2>
+    <p>
+      A inteligência artificial está revolucionando o mercado digital, permitindo criar conteúdo, automatizar vendas e escalar negócios com mais eficiência.
+      Este curso foi pensado para você que quer aproveitar essa revolução, mesmo que não tenha experiência técnica.
+    </p>
+    <ul>
+      <li>Aprenda a usar IA para criar produtos digitais rápidos e de qualidade</li>
+      <li>Descubra estratégias para vender online sem precisar aparecer</li>
+      <li>Construa fontes de renda passivas e escaláveis</li>
+      <li>Tenha suporte para tirar dúvidas e acelerar sua jornada</li>
+    </ul>
+  </section>
 
-    <h3>📝 Exercício Diário:</h3>
-    <p>Anote 3 coisas que você sabe fazer bem e pense: como isso poderia ajudar alguém online? Use ChatGPT para transformar isso em ideias de conteúdo ou produto.</p>
-
-    <h3>🔁 Reflexão:</h3>
-    <p>Você quer ganhar dinheiro ou está disposto a criar algo de valor todos os dias para ser pago por isso?</p>
-  </div>
-</section>
+  <section>
+    <h2>Comece hoje mesmo!</h2>
+    <p>
+      Não deixe para amanhã o sucesso que você pode começar a construir agora. Com o nosso curso, você tem tudo que precisa para transformar sua vida financeira.
+    </p>
+    <div class="cta-buttons" style="text-align:center;">
+      <a href="https://pay.kiwify.com.br/cstPi7Q" target="_blank" rel="noopener noreferrer">💰 Quero Garantir Minha Vaga</a>
+    </div>
+  </section>
+</main>
 
 <footer>
   <p>© 2025 Dinheiro Digital com IA • Criado por Érico Mendieta</p>
